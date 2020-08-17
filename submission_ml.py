@@ -139,6 +139,7 @@ for fn in uploaded.keys():
 
 print(train_generator.class_indices)
 
+#accuracy
 plt.plot(result.history['accuracy'])
 plt.title('Model accuracy')
 plt.xlabel('Accuracy')
@@ -146,6 +147,7 @@ plt.ylabel('Epoch')
 plt.legend(['Trainning'], loc='lower right')
 plt.show()
 
+#loss
 plt.plot(result.history['loss'])
 plt.title('Model loss')
 plt.xlabel('Loss')
@@ -153,6 +155,7 @@ plt.ylabel('Epoch')
 plt.legend(['Trainning'], loc='upper right')
 plt.show()
 
+#Val_loss
 plt.plot(result.history['val_loss'])
 plt.title('Model val_loss')
 plt.xlabel('Val_loss')
@@ -160,6 +163,7 @@ plt.ylabel('Epoch')
 plt.legend(['Trainning'], loc='upper right')
 plt.show()
 
+#Val_Accuracy
 plt.plot(result.history['val_accuracy'])
 plt.title('Model val_accuracy')
 plt.xlabel('Val_accuracy')
@@ -167,6 +171,7 @@ plt.ylabel('Epoch')
 plt.legend(['Trainning'], loc='upper right')
 plt.show()
 
+#mae
 plt.plot(result.history['mae'])
 plt.title('Model mae')
 plt.xlabel('Mae')
